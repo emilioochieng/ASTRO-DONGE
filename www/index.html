@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Crucial for mobile responsiveness and app store layout stretching -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Astro Dodge Mobile Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Canvas where JavaScript will draw the game graphics -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI overlay screen for Menu and Game Over states -->
+        <div id="ui-screen" class="visible">
+            <h1 id="ui-title">ASTRO DODGE</h1>
+            <p id="ui-score-msg"></p>
+            <button id="action-btn">PLAY GAME</button>
+            <p class="controls-hint">Tap Left/Right side of screen to move</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

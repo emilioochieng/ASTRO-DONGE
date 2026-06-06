@@ -1,0 +1,98 @@
+/* Reset margins and disable zooming/scrolling for app environment feel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #050510;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 600px; /* Centers the game screen nicely on ultra-wide desktop monitors */
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #0b0b26 0%, #03030d 100%);
+}
+
+/* UI Overlay styling that sits on top of our graphics canvas */
+#ui-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 16, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    padding: 20px;
+}
+
+#ui-screen.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#ui-title {
+    color: #00d4ff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    text-align: center;
+}
+
+#ui-score-msg {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#action-btn {
+    background: linear-gradient(45deg, #00d4ff, #0055ff);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 214, 255, 0.4);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#action-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 214, 255, 0.2);
+}
+
+.controls-hint {
+    color: #8888aa;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    text-align: center;
+}
