@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "id": "astro-donge",
+      "root": ".",
+      "build": {
+        "web": {
+          "buildCommand": "npm run build",
+          "webDir": "dist"
+        }
+      }
+    }
+  ]
+}
