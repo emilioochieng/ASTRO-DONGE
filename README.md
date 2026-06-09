@@ -2,8 +2,6 @@
 
 A lightweight, fast-paced **2D arcade survival game** built with modern web technologies. Pilot your starship through an endless asteroid field, dodge incoming hazards, and try to beat your high score.
 
-![Game Screenshot](https://via.placeholder.com/800x450?text=Astro-Dodge+Gameplay)
-
 ---
 
 ##  Game Description
