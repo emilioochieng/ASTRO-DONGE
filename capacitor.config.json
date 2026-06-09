@@ -1,5 +1,7 @@
 {
-  "appId": "com.example.app",
-  "appName": "astro-donge",
-  "webDir": "www"
+  "appId": "com.emilioochieng.astrodonge",
+  "appName": "ASTRO-DONGE",
+  "webDir": "dist",
+  "bundledWebRuntime": false
 }
+
