@@ -6,7 +6,7 @@ A lightweight, fast-paced **2D arcade survival game** built with modern web tech
 
 ---
 
-## 🎮 Game Description
+##  Game Description
 
 Navigate your starship through a dangerous asteroid field. The longer you survive, the faster and more intense the game becomes. Simple to learn, hard to master — perfect for quick gaming sessions.
 
@@ -14,7 +14,7 @@ Navigate your starship through a dangerous asteroid field. The longer you surviv
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Smooth 60 FPS Gameplay** using HTML5 Canvas and `requestAnimationFrame`
 - **Dynamic Difficulty Scaling** — asteroids get faster as your score increases
@@ -25,7 +25,7 @@ Navigate your starship through a dangerous asteroid field. The longer you surviv
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **HTML5 Canvas** — Game rendering
 - **CSS3** — Styling and mobile responsiveness
